@@ -2,36 +2,149 @@
 <html lang="pt-br" >
     <head>
         <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Formularios</title>
+        <link rel="stylesheet" type="text/css" href="style/default-dark.css" />
     </head>
     <body>
         <header>
             <h1><a href="index.htm">Estudos de programação Web</a></h1>
         </header>
         <nav>
+            <a href="pagina3.html">/// Listas ///</a>
+            <a href="pagina2.html">/// Mídias ///</a>
+            <a href="pagina1.html">/// Tabelas ///</a>
+            <a href="stylesheets.html">/// Folhas de Estilo ///</a>
         </nav>
         <main>
-            <aside>
-                <h2>Conteudo:</h2>
-                    <ul>
-                        <li><a href="pagina3.html">Listas</a></li>
-                        <li><a href="pagina2.html">Mídias</a></li>
-                        <li><a href="pagina1.html">Tabelas</a></li>
-                        <br/>
-                        <li><a href="index.htm">Pagina inicial</a></li>
-                    </ul>
-            </aside>
             <h2>Formularios</h2>
-                <form action="pagina-processa-dados-do-form" method="post">
-                    <fieldset>
-                        <legend>Dados Gerais</legend>
-                    </fieldset>
-                </form>
+            <form action="scripts/FormProcess.php" method="post">
+                <fieldset>
+                    <legend>Dados Gerais</legend>
+
+                    <label for="ID_Name">Nome: </label>
+                    <input
+                        type="text"
+                        minlength="3"
+                        placeholder="Nome"
+                        id="ID_Name"
+                        name="name"
+                        required
+                    />
+
+                    <label for="ID_Birthday">Data de Nascimento: </label>
+                    <input
+                        type="date"
+                        id="ID_Birthday"
+                        name="birthday"
+                    />
+
+                    <label for="ID_Cpf">CPF: </label>
+                    <input
+                        type="text"
+                        minlength="11"
+                        maxlength="14"
+                        pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+                        placeholder="xxx.xxx.xxx-xx"
+                        id="ID_Cpf"
+                        name="cpf"
+                        required
+                    />
+
+                    <label for="ID_Phone">Celular: </label>
+                    <input
+                        type="tel"
+                        minlength="11"
+                        maxlength="13"
+                        id="ID_Phone"
+                        name="phone"
+                        placeholder="xx-xxxxx-xxxx"
+                        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                    />
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="ID_AddresType">Tipo: </label>
+                    <select id="ID_AddresType" name="addresType" >
+                        <option value="">Selecione</option>
+                        <option value="">Rua</option>
+                        <option value="">Estrada</option>
+                        <option value="">Avenida</option>
+                        <option value="">Outros</option>
+                    </select>
+
+                    <label for="ID_Addres">Logradouro: </label>
+                    <input
+                        type="text"
+                        placeholder="Endereço"
+                        id="ID_Addres"
+                        name="addres"
+                    />
+
+                    <label for="ID_HouseNumber">Número: </label>
+                    <input
+                        type="text"
+                        id="ID_HouseNumber"
+                        name="houseNumber"
+                    />
+
+                    <label for="ID_AddresComplement">Complemento: </label>
+                    <input
+                        type="text"
+                        placeholder="proximo a padaria, perto da loja do seu joão,..."
+                        id="ID_AddresComplement"
+                        name="addresComplement"
+                    />
+                </fieldset>
+                <fieldset>
+                    <legend>Fale Conosco</legend>
+
+                    <p>Tipo de Mensagem:</p>
+
+                    <input
+                        type="radio"
+                        id="ID_MsgType_Sugest"
+                        name="msgType"
+                        value="Sugestão"
+                    />
+                    <label for="ID_MsgType">Sugestão</label>
+                    <br/>
+
+                    <input
+                        type="radio"
+                        id="ID_MsgType_Critic"
+                        name="msgType"
+                        value="Crítica"
+                    />
+                    <label for="ID_MsgType_Critic">Crítica</label>
+                    <br/>
+
+                    <input
+                        type="radio"
+                        id="ID_MsgType_Compliment"
+                        name="msgType"
+                        value="Elogio"
+                    />        
+                    <label for="ID_MsgType_Compliment">Elogio</label>
+                    <br/>
+
+                    <label for="ID_Msg">Mensagem: </label>
+                    <textarea type="text" placeholder="Digite sua mensagem..." id="ID_Msg" name="msg"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Enviar sua mensagem</button>
+                    <button type="reset">Limpar o formulario</button>
+                </fieldset>
+            </form>
         </main>
         <footer>
             <br/>
             <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered" />
             <p><a href="https://github.com/jeffersongomesBR">made by: Jeff G.</a></p>
+            <br/>
+            <a href="index.htm">◄ Voltar a pagina inicial</a>
         </footer>
     </body>
 </html>
+<!--▼-->
