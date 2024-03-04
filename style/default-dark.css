@@ -39,3 +39,14 @@ a:hover {
 a:active {
     color:white;
 }
+
+article {
+    background-color:rgb(21, 13, 92);
+    width: 40%;
+    height: 255px;
+    border:black;
+    /*border-width: 22px;*/
+    border-radius: 12px;
+    color:black;
+    text-align:center;
+}
