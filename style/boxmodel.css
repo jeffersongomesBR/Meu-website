@@ -1,0 +1,37 @@
+main {
+    margin-top: 50px;
+}
+
+.exemple_code {
+    font-family: monospace;
+    background-color: grey;
+    color: white;
+    margin: 15px 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#box1 {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+}
+
+#box2 {
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 20px;
+    /*margin: 30px, 50px, 15px, 20px;*/
+    padding: 50px;
+    border: 10px solid white;
+}
+
+#box3 {
+    width: 400px;
+    height: 200px;
+    background-color: green;
+}
