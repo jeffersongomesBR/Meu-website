@@ -2,6 +2,13 @@ main {
     margin-top: 50px;
 }
 
+main > a {
+    position: absolute;
+    left: 80%;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .exemple_code {
     font-family: monospace;
     background-color: grey;
