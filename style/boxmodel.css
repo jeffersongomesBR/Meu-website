@@ -9,10 +9,10 @@ aside {
     float: right;
 
     /*Appearance*/
-    background-color: aliceblue;
 
     /*Content*/
     font-style: italic;
+    color: rgb(0, 162, 255);
     text-decoration: underline;
     text-align: right;
 }
