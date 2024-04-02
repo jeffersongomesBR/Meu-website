@@ -13,6 +13,7 @@ nav {
     background-color:rgb(67, 44, 202);
     font-size:medium;
     border: #0b0c17;
+    margin-bottom: 20px;
 }
 
 nav > a {
