@@ -3,20 +3,6 @@ main {
     margin-top: 50px;
 }
 
-aside {
-    /*Pos*/
-    margin-top: 50px;
-    float: right;
-
-    /*Appearance*/
-
-    /*Content*/
-    font-style: italic;
-    color: rgb(0, 162, 255);
-    text-decoration: underline;
-    text-align: right;
-}
-
 .exemple_code {
     /*Pos*/
     margin: 15px 15px;
